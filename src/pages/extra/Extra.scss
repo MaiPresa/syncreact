@@ -1,0 +1,55 @@
+@use "../../scssStyles/_variables.scss" as *;
+
+.testimonialsContainer {
+    margin-top: 16vh;
+    text-align: center;
+
+    ul {
+        @include flexbox(row, center, center, 24px);
+        flex-wrap: wrap;
+        @include listStyle();
+    }
+
+    .stars {
+        height: 16px;
+        width: 90px;
+        background-image: url(../../assets/images/star-solid.svg);
+        background-repeat: repeat-x;
+        filter: invert(75%) sepia(64%) saturate(1775%) hue-rotate(347deg) brightness(100%) contrast(104%);
+        -webkit-filter: invert(75%) sepia(64%) saturate(1775%) hue-rotate(347deg) brightness(100%) contrast(104%);
+    }
+
+    .testimonial {
+        @include flexbox(column, center, center, 0);
+        max-width: 75ch;
+        text-align: center;
+
+        hr {
+            border: solid 1px silver;
+            width: 24px;
+        }
+    }
+}
+
+.numbersContainer {
+    @include flexbox(row, center, center, 48px);
+    @include listStyle();
+    flex-wrap: wrap;
+    text-align: center;
+
+    li {
+        @include flexbox(column, center, center, 0px);
+    }
+}
+
+.imgContainer {
+    max-width: 75ch;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 16vh;
+
+    div {
+        @include flexbox(row, center, center, 0px);
+        flex-wrap: wrap;
+    }
+}

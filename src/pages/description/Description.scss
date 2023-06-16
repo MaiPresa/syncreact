@@ -1,0 +1,59 @@
+@use "../../scssStyles/_variables" as *;
+
+
+header {
+    @include flexbox(column, center, center, 0);
+    text-align: center;
+    margin-top: 16vh;
+    margin-bottom: 16vh;
+
+    div {
+        
+        p {
+        max-width: 75ch;
+        margin: auto;
+        margin-bottom: 16px;
+        }
+        div {
+            @include flexbox(row, center, center, 0);
+            flex-wrap: wrap;
+        }
+    }
+
+    ul {
+        @include flexbox(row, center, center, 24px);
+        flex-wrap: wrap;
+        @include listStyle();
+    }
+}
+
+// ----------- BUTTON ICONS ----------
+
+
+.appleIcon {
+    background-image: url(../../assets/images/apple.svg);
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(104%);
+    -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(104%);
+}
+
+.playIcon {
+    background-image: url(../../assets/images/triangle-fill.svg);
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(104%);
+    -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(104%);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+// ----------- CENTER IMAGE ----------
+
+.centerImg {
+    max-width: 648px;
+    width: 100%;
+    margin: 48px 0 24px 0;
+}

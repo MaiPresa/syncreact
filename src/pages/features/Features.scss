@@ -1,0 +1,30 @@
+@use "../../scssStyles/_variables.scss" as *;
+
+
+.firstArticle {
+    @include flexbox(row, center, center, 24px);
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 16vh 0;
+
+    div {
+        @include flexbox(column, center, flex-start, 0px);
+        max-width: 50ch;
+        text-align: left;
+        align-self: flex-start;
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            padding: 16px;
+            margin: 0;
+        }
+    }
+
+    img {
+        max-width: 520px;
+        width: 100%;
+    }
+}

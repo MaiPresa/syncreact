@@ -1,0 +1,78 @@
+@use "../../scssStyles/variables" as *;
+
+.bttnPrimary {
+    @include bttnCta();
+    @include flexbox(row, center, center, 8px);
+}
+
+.bttnPrimary:hover {
+    @include bttnSecondary();
+    cursor: pointer;
+}
+
+.bttnPrimary:hover .appleIcon{
+    filter: invert(57%) sepia(57%) saturate(5254%) hue-rotate(321deg) brightness(104%) contrast(101%);
+    -webkit-filter: invert(57%) sepia(57%) saturate(5254%) hue-rotate(321deg) brightness(104%) contrast(101%);
+}
+
+.bttnPrimary:hover .playIcon{
+    filter: invert(57%) sepia(57%) saturate(5254%) hue-rotate(321deg) brightness(104%) contrast(101%);
+    -webkit-filter: invert(57%) sepia(57%) saturate(5254%) hue-rotate(321deg) brightness(104%) contrast(101%);
+}
+
+.bttnSecondary {
+    @include bttnSecondary();
+} 
+
+.bttnSecondary:hover {
+    @include bttnCta();
+    cursor: pointer;
+}
+
+
+
+.purpleBttn {
+    height: 36px;
+    padding: 0 24px;
+    margin: 4px;
+    color: white;
+    background-color: #AA7EEC;
+    @include flexbox(row, center, center, 8px);
+}
+
+.watchIcon {
+    // background-image: url(./../icons/stopwatch.svg);
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(104%);
+    -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(104%);
+}
+
+.whiteBttn {
+    height: 36px;
+    padding: 0 24px;
+    margin: 4px;
+    color: #c0c0c0;
+    background-color: white;
+    @include flexbox(row, center, center, 8px);
+}
+
+.listIcon {
+    // background-image: url(./../icons/list-ul.svg);
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(78%) contrast(97%);
+    -webkit-filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(78%) contrast(97%);
+}
+
+
+.calendarIcon {
+    // background-image: url(./../icons/calendar3.svg);
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(78%) contrast(97%);
+    -webkit-filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(78%) contrast(97%);
+}

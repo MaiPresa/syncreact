@@ -1,0 +1,47 @@
+@use "../../scssStyles/variables.scss" as *;
+
+.secondArticle {
+    @include flexbox(row, center, center, 24px);
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 16vh 0;
+
+    &>div {
+        @include flexbox(column, flex-start, flex-start, 0px);
+        max-width: 50ch;
+        text-align: left;
+        align-self: flex-start;
+        
+        .screensContainer {
+            @include flexbox(row, center, center, 0px);
+            flex-wrap: wrap;
+        }
+
+        ul {
+            padding: 16px;
+        }
+
+        &>div:last-child {
+            @include flexbox (row, center, center, 0);
+            flex-wrap: wrap;
+        }
+    }
+
+    img {
+        max-width: 520px;
+        width: 100%;
+        order: 1;
+    }
+}
+
+.blueBg {
+    padding: 84px 0;
+    background-color: #E8EFF6;
+}
+
+.whiteBg {
+    background-color: white;
+    padding: 48px 0;
+    max-width: 1200px;
+    margin: auto;
+}

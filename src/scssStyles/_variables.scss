@@ -1,0 +1,43 @@
+$red: #FF556E;
+$bgColor: #F7FAFD;
+
+
+@mixin flexbox($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin listStyle($style:none, $padding:0) {
+    list-style: $style;
+    padding-left: $padding;
+}
+
+@mixin bttnCta() {
+    margin: 8px;
+    height: 32px;
+    background-color: $red;
+    padding: 0 32px;
+    border: 0px;
+    border-radius: 48px;
+    color: white;
+}
+
+@mixin bttnSecondary() {
+    margin: 8px;
+    height: 32px;
+    border: 0px;
+    background-color: transparent;
+    padding: 0 32px;
+    -webkit-box-shadow:inset 0px 0px 0px 2px $red;
+    box-shadow:inset 0px 0px 0px 2px $red;
+    border-radius: 48px;
+    color: $red;
+}
+
+@mixin textSize ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}

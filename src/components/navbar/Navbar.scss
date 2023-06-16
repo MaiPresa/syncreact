@@ -1,0 +1,33 @@
+@use "../../scssStyles/variables" as *;
+
+nav {
+    position: sticky;
+    top: 0;
+    @include flexbox(row,space-between ,center, 0px);
+    flex-wrap: wrap;
+    height: 64px;
+    max-width: 1200px;
+    margin: auto;
+    
+
+    img {
+        max-height: 36px;
+    }
+
+    ul {
+        @include flexbox(row, space-between ,center, 4px);
+        flex-wrap: wrap;
+        list-style: none;
+        
+        li {
+            height: 48px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        li:hover {
+            color: $red;
+        }
+    }
+}

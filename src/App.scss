@@ -1,0 +1,54 @@
+@use "./scssStyles/variables" as *;
+
+
+* {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  background-color: $bgColor;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// ----------- TEXT ----------
+
+h1 {
+  font-size: 3.75em;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.smallBold {
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+.smallThin {
+  font-size: 0.75em;
+  font-weight: 200;
+}
+
+.numbersBold {
+  font-size: 4em;
+  font-weight: 900;
+  margin: -32px 0;
+}
